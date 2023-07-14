@@ -1,38 +1,34 @@
-<?php 
+<?php
 
-/* 1. Public -
-class Employee{
-    //property
-    public $name;
+class Employee {
+    // Property
+    private $name;
 
-    //methods
+    // Methods
     public function set_name($name) {
         $this->name = $name;
-      }
-    function get_name() {
+    }
+
+    public function get_name() {
         return $this->name;
-      }
-  }
-  
+    }
+}
+
 $emp1 = new Employee();
 $emp1->set_name('Anisha');
-echo $emp1->get_name(); */
+echo $emp1->get_name();
 
+class Employee2 {
+    // Property
+    private $name = 'Anisha Bhujbal';
 
-
-// 1. Private -
-class Employee{
-    //property
-    private $name='Anisha Bhujbal';
-
-    //methods
+    // Method
     public function show_name() {
         echo $this->name;
-      }
-  }
-  
-$emp1 = new Employee();
-$emp1->show_name();
+    }
+}
 
+$emp2 = new Employee2();
+$emp2->show_name();
 
 ?>
